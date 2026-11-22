@@ -1,2 +1,7 @@
+.sdk/
+.openrac/
 build/
-.DS_Store
+build-*/
+dist/
+__pycache__/
+*.pyc

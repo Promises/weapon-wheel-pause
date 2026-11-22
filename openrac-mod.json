@@ -2,11 +2,79 @@
   "format": 2,
   "id": "weapon-wheel-pause",
   "name": "Weapon Wheel Pause",
-  "version": "0.1.0",
-  "author": "Moritz Wallinger",
-  "description": "Pauses Ratchet and, when available, world moby updates while the in-game weapon wheel is open.",
+  "version": "1.0.3",
+  "author": "Moritz Wallinger and glawks",
+  "description": "Pause RAC1 during Quick Select while preserving water, scenery and visual effects, with animation freezing and configurable background shading.",
   "license": "MIT",
   "api": "1.12",
-  "games": { "rac1": ["pal", "ntsc"] },
-  "hooks": ["rac1.player.update", "rac1.hud.quick_select.update"]
+  "games": {
+    "rac1": [
+      "pal",
+      "ntsc"
+    ]
+  },
+  "hooks": [
+    "rac1.player.update",
+    "rac1.hud.quick_select.update",
+    "rac1.hud.quick_select.draw",
+    "rac1.moby.water_surface.update",
+    "rac1.moby.moby1901.update",
+    "rac1.moby.class_655.update",
+    "rac1.moby.light_beam.update",
+    "rac1.moby.nanotech_ball.update",
+    "rac1.moby.hideable_flower.update",
+    "rac1.moby.moby552.update",
+    "rac1.moby.moby99.update",
+    "rac1.moby.fleet_reflection.update",
+    "rac1.moby.moby78.update",
+    "rac1.moby.moby1378.update",
+    "rac1.moby.moby1392.update",
+    "rac1.moby.moby1402.update"
+  ],
+  "settings": [
+    {
+      "key": "freeze_animations",
+      "name": "Freeze enemy animations",
+      "type": "bool",
+      "default": true,
+      "description": "Set the game's animation-skip bit on mobys whose gameplay update is paused."
+    },
+    {
+      "key": "keep_water",
+      "name": "Keep water and scenery drawing",
+      "type": "bool",
+      "default": true,
+      "description": "Preserve water, mud, ship glass and visual effects including vendor glow, Nanotech orbs, Swingshot particles, Kalebo ribbons, Veldin Orbit lasers, fleet backdrop and final Veldin barriers."
+    },
+    {
+      "key": "hold_hoven_scroll",
+      "name": "Freeze Hoven water scrolling",
+      "type": "bool",
+      "default": true,
+      "description": "Temporarily stop the game frame clock during Hoven's class 1901 update so the surface stays visible but its scrolling texture stays still."
+    },
+    {
+      "key": "diagnostic_log",
+      "name": "Log pause diagnostics",
+      "type": "bool",
+      "default": true,
+      "description": "When the weapon wheel closes, log the observed moby classes and which ones were exempted, for investigating missing scenery."
+    },
+    {
+      "key": "soften_background",
+      "name": "Soften background during weapon selection",
+      "type": "bool",
+      "default": true,
+      "description": "Shade the scene beneath the weapon wheel. API 1.12 uses RAC1's own tint renderer; API 1.14+ builds can use a feathered overlay. This is not a Gaussian blur."
+    },
+    {
+      "key": "background_softening_strength",
+      "name": "Background softening strength",
+      "type": "int",
+      "default": 30,
+      "min": 10,
+      "max": 60,
+      "description": "Strength of the translucent shade in percent. Changes take effect after restarting the game."
+    }
+  ]
 }
