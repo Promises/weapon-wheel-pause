@@ -1,7 +1,5 @@
 # Weapon Wheel Pause
 
-Originally developed by **[Moritz Wallinger](https://github.com/momo1212221/weapon-wheel-pause)**. The expanded implementation, including animation, scenery and level-specific visual fixes, was developed by **[glawks](https://github.com/glawks)** and is being brought back into the original project.
-
 Pause the action in **Ratchet & Clank (2002)** while choosing a weapon in **OpenRAC**.
 
 Holding **Quick Select** freezes Ratchet, enemies and most world interactions while keeping the weapon wheel responsive. Water, glass and other scenery remain visible instead of disappearing when the game is paused.
