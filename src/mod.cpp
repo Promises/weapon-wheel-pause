@@ -113,7 +113,7 @@ pause_policy::VendorBrightnessHold vendor_brightness;
 bool freeze_animations = true;
 bool keep_water = true;
 bool hold_hoven_scroll = true;
-bool diagnostic_log = true;
+bool diagnostic_log = false;
 bool soften_background = true;
 int background_softening_strength = 30;
 using GameDrawRectFn = void (*)(std::int32_t, std::int32_t, std::int32_t,

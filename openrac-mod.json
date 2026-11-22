@@ -57,7 +57,7 @@
       "key": "diagnostic_log",
       "name": "Log pause diagnostics",
       "type": "bool",
-      "default": true,
+      "default": false,
       "description": "When the weapon wheel closes, log the observed moby classes and which ones were exempted, for investigating missing scenery."
     },
     {

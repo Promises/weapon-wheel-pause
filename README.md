@@ -30,7 +30,7 @@ The mod supports **Ratchet & Clank 1 (PAL and NTSC-U)** on **Windows x86_64, Lin
 | Freeze enemy animations | On | Freeze the animations of paused world objects. |
 | Keep water and scenery drawing | On | Keep scenery and supported visual effects visible during Quick Select. |
 | Freeze Hoven water scrolling | On | Keep Hoven's scrolling water texture still while paused. |
-| Log pause diagnostics | On | Write extra information to the log for troubleshooting. |
+| Log pause diagnostics | Off | Write extra information to the log for troubleshooting. |
 | Soften background during weapon selection | On | Dim the scene behind the weapon wheel. |
 | Background softening strength | 30% | Set the background shade strength (10–60%). |
 
