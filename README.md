@@ -48,10 +48,10 @@ Android ARM64.
 
 **OpenRAC with mod interface 1.39 and three new hook points**, `rac1.level.update_play`,
 `rac1.freeze.update` and `rac1.freeze.draw`, which are not in an OpenRAC release yet:
-TODO: link the OpenRAC pull request(s) adding them, and the first dev build that has them.
+they are added by [OpenRAC pull request #863](https://github.com/OpenRAC/OpenRAC/pull/863).
 A game without them refuses the mod and says why. Until then, `sdk.lock` pins the SDK of the branch
-`rac1-freeze-mode-hooks` of [Promises/OpenRAC](https://github.com/Promises/OpenRAC) (commit
-`dae54f21`).
+`rac1-freeze-hook-points` of [Promises/OpenRAC](https://github.com/Promises/OpenRAC) (commit
+`1e29c3c8`), the branch of that pull request.
 
 Ratchet & Clank PAL and NTSC-U.
 

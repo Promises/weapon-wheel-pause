@@ -26,10 +26,6 @@
     {
       "id": "pause-weapon-wheel",
       "reason": "the earlier Pause Weapon Wheel: both replace the quick select (rac1.hud.quick_select.*) and pause the game while it is open"
-    },
-    {
-      "id": "gc-weapon-wheel",
-      "reason": "the same Going Commando quick select, published on its own: both replace the quick select and its pause"
     }
   ],
   "settings": [
